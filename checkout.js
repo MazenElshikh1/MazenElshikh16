@@ -1,3 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    
+<div class="container">
+    <div class="checkoutLayout">
+
+        
+        <div class="returnCart">
+            <a href="/">keep shopping</a>
+            <h1>List Product in Cart</h1>
+            <div class="list">
+
+                <div class="item">
+                    <img src="images/1.webp">
+                    <div class="info">
+                        <div class="name">PRODUCT 1</div>
+                        <div class="price">$22/1 product</div>
+                    </div>
+                    <div class="quantity">5</div>
+                    <div class="returnPrice">$433.3</div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="right">
+            <h1>Checkout</h1>
+
+            <div class="form">
+                <div class="group">
+                    <label for="name">Full Name</label>
+                    <input type="text" name="name" id="name">
+                </div>
+    
+                <div class="group">
+                    <label for="phone">Phone Number</label>
+                    <input type="text" name="phone" id="phone">
+                </div>
+    
+                <div class="group">
+                    <label for="address">Address</label>
+                    <input type="text" name="address" id="address">
+                </div>
+    
+            
+                <div class="group">
+                    <label for="city">City</label>
+                    <input type="text" name="address" id="city">
+                </div>
+             
+            </div>
+            <div class="return">
+                <div class="row">
+                    <div>Total Quantity</div>
+                    <div class="totalQuantity">70</div>
+                </div>
+                <div class="row">
+                    <div>Total Price</div>
+                    <div class="totalPrice">$900</div>
+                </div>
+            </div>
+            <button class="buttonCheckout">CHECKOUT</button>
+            </div>
+    </div>
+</div>
+<style>
+
+
+
+
+
+
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Checkout layout */
+.checkoutLayout {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 800px;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+.returnCart,
+.right {
+  width: 100%;
+}
+
+.returnCart a {
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+}
+
+.returnCart h1,
+.right h1 {
+  margin-top: 0;
+  font-size: 24px;
+}
+
+.list {
+  margin-top: 20px;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.item img {
+  width: 100px;
+  height: 100px;
+  margin-right: 10px;
+}
+
+.info {
+  flex-grow: 1;
+}
+
+.name {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.price {
+  font-size: 14px;
+  color: #777;
+}
+
+.quantity,
+.returnPrice {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.form {
+  margin-top: 20px;
+}
+
+.group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.return {
+  margin-top: 20px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.totalQuantity,
+.totalPrice {
+  font-weight: bold;
+}
+
+.buttonCheckout {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.buttonCheckout:hover {
+  background-color: #555;
+}
+
+
+
+
+
+
+
+
+</style>
+
+<script>
+
 
 
 
@@ -78,4 +308,8 @@ $(document).ready(function() {
       // Open the WhatsApp URL in a new tab/window
       window.open(whatsappURL, '_blank');
     });
-  });
+  });</script>
+
+
+</body>
+</html>
