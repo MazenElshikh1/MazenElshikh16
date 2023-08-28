@@ -78,4 +78,4 @@ $(document).ready(function() {
       // Open the WhatsApp URL in a new tab/window
       window.open(whatsappURL, '_blank');
     });
-  });</script>
+  });
