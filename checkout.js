@@ -1,3 +1,8 @@
+
+
+
+
+
 let listCart = [];
 function checkCart(){
         var cookieValue = document.cookie
@@ -41,3 +46,36 @@ function addCartToHTML(){
     totalQuantityHTML.innerText = totalQuantity;
     totalPriceHTML.innerText = '$' + totalPrice;
 }
+
+
+
+
+$(document).ready(function() {
+    // Handle checkout button click event
+    $('.buttonCheckout').on('click', function() {
+      // Retrieve order details
+      var fullName = $('#name').val();
+      var phoneNumber = $('#phone').val();
+      var address = $('#address').val();
+      var city = $('#city').val();
+  
+      // Construct the order message
+      var message = 'Order Details:\n';
+      message += 'Full Name: ' + fullName + '\n';
+      message += 'Phone Number: ' + phoneNumber + '\n';
+      message += 'Address: ' + address + '\n';
+      message += 'City: ' + city  ;
+  
+      // Encode the message for URL
+      var encodedMessage = encodeURIComponent(message);
+  
+      // Replace the following WhatsApp number with your desired recipient number
+      var whatsappNumber = '+201007276757';
+  
+      // Construct the WhatsApp URL
+      var whatsappURL = 'https://api.whatsapp.com/send?phone=' + whatsappNumber + '&text=' + encodedMessage;
+  
+      // Open the WhatsApp URL in a new tab/window
+      window.open(whatsappURL, '_blank');
+    });
+  });</script>
