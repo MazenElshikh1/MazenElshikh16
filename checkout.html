@@ -1,13 +1,13 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chekout</title>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        <link rel="stylesheet" href="css.css">
-    <script src="checkout.js"></script>
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="stylesheet" href="css.css">
 </head>
 <body>
     
@@ -16,7 +16,7 @@
 
         
         <div class="returnCart">
-            <a href="https://mazenelshikh1.github.io/MazenElshikh16">keep shopping</a>
+            <a href="/">keep shopping</a>
             <h1>List Product in Cart</h1>
             <div class="list">
 
@@ -53,12 +53,21 @@
                     <input type="text" name="address" id="address">
                 </div>
     
-            
+                <div class="group">
+                    <label for="country">City</label>
+                    <select name="country" id="country">
+                        <option value="">Choose..</option>
+                        <option value="">Alex</option>
+                    </select>
+                </div>
+    
                 <div class="group">
                     <label for="city">City</label>
-                    <input type="text" name="address" id="city">
+                    <select name="city" id="city">
+                        <option value="">Choose..</option>
+                        <option value="">Borg ElArab</option>
+                    </select>
                 </div>
-             
             </div>
             <div class="return">
                 <div class="row">
@@ -75,6 +84,8 @@
     </div>
 </div>
 
+
+<script src="checkout.js"></script>
 
 </body>
 </html>
